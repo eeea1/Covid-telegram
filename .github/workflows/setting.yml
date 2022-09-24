@@ -5,7 +5,7 @@ name: Python package
 
 on:
   schedule:
-    - cron: 0 11 * * 6
+    - cron: 0 14 * * 9
 jobs:
   build:
   
@@ -23,8 +23,12 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run code
       env:
-        CHAT_ID: ${{ secrets.CHAT_ID }}
         SERVICEKEY: ${{ secrets.SERVICEKEY }}
+      run: |
+        python crawlings.py
+    - name: Run code
+      env:
+        CHAT_ID: ${{ secrets.CHAT_ID }}
         TOKEN: ${{ secrets.TOKEN }}
       run: |
-        python main.py
+        python telegram_MSG.py
