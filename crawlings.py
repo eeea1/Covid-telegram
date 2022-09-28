@@ -3,10 +3,10 @@ import requests
 import json
 import os
 
-servicekey = os.environ['SERVICEKEY']
+Servicekey = os.environ['SERVICEKEY']
 avl = {}
 url = 'http://apis.data.go.kr/1352000/ODMS_COVID_02/callCovid02Api'
-params ={'serviceKey' : servicekey, 'pageNo' : '1', 'numOfRows' : '500', 'apiType' : 'xml', 'status_dt' : '20220906' }
+params ={'serviceKey' : Servicekey, 'pageNo' : '1', 'numOfRows' : '500', 'apiType' : 'xml', 'status_dt' : '20220906' }
 response =requests.get(url, params=params) #url
 html = response.text #url을 해석하기 쉽게 텍스트형태로 전환.
 soup = BeautifulSoup(html, 'html.parser') #bs4를 토토sp = soup.find('item').get_text()
