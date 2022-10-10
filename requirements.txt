@@ -2,7 +2,6 @@ APScheduler==3.6.3
 beautifulsoup4==4.11.1
 bs4==0.0.1
 cachetools==4.2.2
-certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
 charset-normalizer==2.1.0
 idna==3.3
 python-telegram-bot==13.14
