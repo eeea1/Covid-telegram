@@ -20,10 +20,17 @@
     ├─ requirements.txt
     ├─ crawlings.py
     └─ telegram_MSG.py
-     
+***
    ## How to use
    * **Action secrets** :
       * 중요 정보를 github action secrets을 settings에서 등록함
    ![제목 없음](https://user-images.githubusercontent.com/103316263/195986270-56b2adc6-e8e2-41ef-b017-ab0e38b1bad4.png)
       * set in https://github.com/eeea1/Covid-telegram/blob/main/.github/workflows/setting.yml
-   * **local **
+   * **local working** :
+      * Above repository and requirements.txt 다운로드
+        ```
+            git clone https://github.com/eeea1/Covid-telegram.git
+            cd Covid-telegram
+            pip install -r requirements.txt
+        ```
+      * .env 생성,
