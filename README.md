@@ -7,8 +7,14 @@
      
 ***
    ## File structure
-   
-   
+    ├─ README.md
+          ├─ package.requests
+          ├─ package.json
+          └─ package.BeautifulSoup
+    └─ telegram_MSG.py
+          ├─ package.json
+          └─ package.telegram
+    ├─ crawlings.py
     ├─ .github
     │  └─ workflows
     │     └─ setting.yml
@@ -16,10 +22,8 @@
     │  └─ example.jpeg
     │  └─ github secrets.png
     ├─ .gitignore
-    ├─ README.md
     ├─ requirements.txt
-    ├─ crawlings.py
-    └─ telegram_MSG.py
+      
 ***
    ## How to use
    * **Action secrets** :
@@ -33,4 +37,26 @@
             cd Covid-telegram
             pip install -r requirements.txt
         ```
-      * .env 생성,
+      * crawlings : env 생성, 중요 정보 암호화
+        ```
+            #예시
+            apikey = "발급받은 API키" # API 키를 다음 란에 입력해 주세요.
+            korea = "https://api.corona-19.kr/korea/beta/?serviceKey="
+            response = requests.get(korea + apikey)
+            message = response.text
+        ```
+      * telegram_MSG : env 생성, 중요 정보 암호화
+        ```
+            #예시
+            Token = "발급받은 토큰"
+            Chat_Id = "발급받은 Chat ID"
+            bot = telegram.Bot(token=Token)
+            chat_id = Chat_Id
+        ```
+      * 실행
+       ```
+           python crawlings.py
+       ```
+       ```
+           python telegram_MSG.py
+       ```
