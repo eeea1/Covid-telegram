@@ -46,8 +46,8 @@
             bot = telegram.Bot(token=Token)
             chat_id = Chat_Id
         ```
-        * To create a Bot
-           ![image](https://user-images.githubusercontent.com/103316263/196686093-13c09a71-f6fc-4557-aaee-938c4869c342.png)
+     * To create a Bot  
+           ![image](https://user-images.githubusercontent.com/103316263/196690524-41638aea-a461-40d3-a3fb-e8f26d2d5587.png)
            ![image](https://user-images.githubusercontent.com/103316263/196686302-cd5b4e0d-cb11-420d-9811-e28c23d0e45d.png)
            ![image](https://user-images.githubusercontent.com/103316263/196686640-94962bea-940c-40c6-b96b-1727aceb7c67.png)
            
