@@ -37,6 +37,7 @@
             response = requests.get(korea + apikey)
             message = response.text
         ```
+        * "https://api.corona-19.kr/" 에서 발급받기
       * telegram_MSG : env 생성, 중요 정보 암호화
         ```
             #예시
@@ -45,9 +46,28 @@
             bot = telegram.Bot(token=Token)
             chat_id = Chat_Id
         ```
+        * To create a Bot
+           ![image](https://user-images.githubusercontent.com/103316263/196686093-13c09a71-f6fc-4557-aaee-938c4869c342.png)
+           ![image](https://user-images.githubusercontent.com/103316263/196686302-cd5b4e0d-cb11-420d-9811-e28c23d0e45d.png)
+           ![image](https://user-images.githubusercontent.com/103316263/196686640-94962bea-940c-40c6-b96b-1727aceb7c67.png)
+           
+
       * 실행
        ```
            python crawlings.py
  
            python telegram_MSG.py
        ```
+***
+   ### Tech stack
+   * Language: Python 3.7 이상 
+   * Tool: PyCharm (version 2022.02), Telegram Bot API (version 6.2) 
+   * CI/CD: Github Action 
+   * VCS(Version Control System): Git 
+***
+   ### Development period
+   * 2022년 9월 3일 ~ 10월 17일 
+***
+   ### Developer
+   * 박성민 
+   * Email : dogrest0723@gmail.com 
