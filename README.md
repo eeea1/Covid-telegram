@@ -8,19 +8,11 @@
 ***
    ## File structure
     ├─ README.md
-          ├─ package.requests
-          ├─ package.json
-          └─ package.BeautifulSoup
     └─ telegram_MSG.py
-          ├─ package.json
-          └─ package.telegram
     ├─ crawlings.py
     ├─ .github
     │  └─ workflows
     │     └─ setting.yml
-    ├─ images
-    │  └─ example.jpeg
-    │  └─ github secrets.png
     ├─ .gitignore
     ├─ requirements.txt
       
@@ -56,7 +48,6 @@
       * 실행
        ```
            python crawlings.py
-       ```
-       ```
+ 
            python telegram_MSG.py
        ```
